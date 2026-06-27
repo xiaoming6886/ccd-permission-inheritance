@@ -1,0 +1,21 @@
+{
+  "agents": {
+    "commander": {
+      "permission": {
+        "read": "allow",
+        "edit": "deny",
+        "bash": "deny",
+        "task": "allow"
+      },
+      "note": "Commander can delegate but cannot edit/bash itself"
+    },
+    "worker": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "bash": "allow"
+      },
+      "note": "Worker performs actual file operations"
+    }
+  }
+}
